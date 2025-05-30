@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Formas2D
+﻿namespace Formas2D
 {
-    public class Circulo
+    public class Circulo : Elipse
     {
+        public double Radio
+        {
+            // Se podria usa SemiEjeMayor o SemiEjeMenor, ya que en un círculo son iguales
+            get { return SemiEjeMayor; }
+            set
+            {
+                SemiEjeMayor = value;
+                SemiEjeMenor = value;
+            }
+        }
+
+        public Circulo(double radio) : base(radio, radio) { }
     }
 }

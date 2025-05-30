@@ -9,8 +9,8 @@
             NumeroLados = numeroLados;
         }
 
-        public abstract override double CalcularPerimetro();
-
         public abstract override double CalcularArea();
+
+        public abstract override double CalcularPerimetro();
     }
 }
