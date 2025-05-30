@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Formas2D
+﻿namespace Formas2D
 {
-    public class Forma
+    public abstract class Forma
     {
+        public abstract double CalcularArea();
+        public abstract double CalcularPerimetro();
     }
 }
