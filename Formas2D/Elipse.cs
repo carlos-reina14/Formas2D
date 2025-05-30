@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Formas2D
 {
-    public class Program
+    public class Elipse
     {
-        static void Main()
-        {
-        }
     }
 }
