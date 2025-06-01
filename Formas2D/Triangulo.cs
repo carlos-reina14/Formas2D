@@ -51,5 +51,13 @@ namespace Formas2D
             else
                 return 0;
         }
+
+        public override string ToString()
+        {
+            if (BaseTriangulo.HasValue && AlturaTriangulo.HasValue)
+                return $"Triángulo (Base: {BaseTriangulo.Value:F2}, Altura: {AlturaTriangulo.Value:F2})";
+            else
+                return $"Triángulo (Lados: {LadoA:F2}, {LadoB:F2}, {LadoC:F2})";
+        }
     }
 }

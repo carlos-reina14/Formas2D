@@ -14,5 +14,10 @@
         }
 
         public Circulo(double radio) : base(radio, radio) { }
+
+        public override string ToString()
+        {
+            return $"Círculo (Radio: {Radio:F2})";
+        }
     }
 }

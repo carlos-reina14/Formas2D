@@ -21,5 +21,10 @@
         {
             return 2 * (Base + Altura);
         }
+
+        public override string ToString()
+        {
+            return $"Rectángulo (Base: {Base:F2}, Altura: {Altura:F2})";
+        }
     }
 }

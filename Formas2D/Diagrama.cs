@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Formas2D
@@ -31,6 +32,19 @@ namespace Formas2D
         public double CalcularPerimetroTotal()
         {
             return Formas.Sum(forma => forma.CalcularPerimetro());
+        }
+
+        public void MostrarFormas()
+        {
+            if (Formas.Count == 0)
+                Console.WriteLine("El diagrama no contiene formas.");
+            else
+            {
+                Console.WriteLine("--- Formas en el Diagrama ---");
+                foreach (Forma forma in Formas)
+                    Console.WriteLine($"- {forma}, Área: {forma.CalcularArea():F2}, Perímetro: {forma.CalcularPerimetro():F2}");
+                Console.WriteLine("--------------------------");
+            }
         }
     }
 }
